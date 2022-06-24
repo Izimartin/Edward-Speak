@@ -6,4 +6,4 @@
 #
 #### Homepage Preview 
 
-![Preview](img/Preview.png)
+![Hompage Preview](ES%20Voting%20App/img/Preview.png)
