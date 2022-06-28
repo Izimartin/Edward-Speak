@@ -92,7 +92,7 @@ header .right-side .nav-link-wrapper a:hover{
 
 .container .btn,.btn2 {
   display: inline-block;
-  background: #FF0000;
+  background: #ff0000;
   padding: 12px 18px 12px 18px;
   text-decoration: none;
   border-radius: 25px;
@@ -169,6 +169,12 @@ header .right-side .nav-link-wrapper a:hover{
   width: 54px;
   margin: 20px;
 
+}
+
+#map{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
