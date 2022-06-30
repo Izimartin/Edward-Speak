@@ -1,30 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VOTE</title>
 
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
     <header>
-        <div class="left-side">
-          <a href="index.html"> <img src="img/edward-logo.png" alt="" /> </a>
+      <div class="left-side">
+        <a href="index.html"> <img src="img/edward-logo.png" alt="" /> </a>
+      </div>
+      <div class="right-side">
+        <div class="nav-link-wrapper"><a href="index.html">Home</a></div>
+        <div class="nav-link-wrapper"><a href="vote.html">Vote Now</a></div>
+        <div class="nav-link-wrapper">
+          <a href="https://github.com/Izimartin/Edward-Speak">Get Code</a>
         </div>
-        <div class="right-side">
-          <div class="nav-link-wrapper"><a href="index.html">Home</a></div>
-          <div class="nav-link-wrapper"><a href="vote.html">Vote Now</a></div>
-          <div class="nav-link-wrapper"><a href="https://github.com/Izimartin/Edward-Speak">Get Code</a></div>
-          <div class="nav-link-wrapper"><a href="about.html">About Us</a></div>
+        <div class="nav-link-wrapper"><a href="about.html">About Us</a></div>
+      </div>
+    </header>
+
+    <div id="map"></div>
+    <div id="vote">
+      <div class="row">
+        <div>
+          <img class="edward-img" src="img/edward.jpeg" alt="" />
         </div>
-      </header>
+        <div style="width: 100%">
+          <div class="progress">
+            <progress min="0" max="100" value="63" />
+          </div>
+        </div>
+        <div>
+          <img class="elon-img" src="img/elon-musk.jpeg" alt="" />
+        </div>
+      </div>
+    </div>
 
-      <div id="map"></div>
-    
-</body>
+    <div class="castvote">
+      <div>
+        <h3 class="cast">Cast Your Vote</h3>
+      </div>
+      <div class="select-box">
+        <p class="select-state">Select State:</p>
+        <button class="btn-country">New York</button>
+      </div>
+      <div class="ed-el">
+        <img class="ed-img" src="img/edward.jpeg" alt=" Edward Cambel" />
+        <img class="el-img" src="img/elon-musk.jpeg" alt=" Elon Musk" />
+      </div>
 
-<script type="text/javascript" src="map/mapdata.js"></script>		
-<script  type="text/javascript" src="map/usmap.js"></script>
+      <button class="vote-btn">Vote</button>
+    </div>
+
+    <script type="text/javascript" src="map/mapdata.js"></script>
+    <script type="text/javascript" src="map/usmap.js"></script>
+  </body>
 </html>
