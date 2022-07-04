@@ -535,6 +535,18 @@ header .right-side .nav-link-wrapper a:hover{
   }
 }
 
+.votecount {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+#aCount {
+  color: #f00;
+}
+#bCount {
+  color: blue;
+}
 
 #vote{
   max-width: 640px;
@@ -570,14 +582,14 @@ progress::-webkit-progress-value {
 progress::-webkit-progress-bar {
   background: blue;
 }
-.edward-img {
+.first-candidate-image-progress {
   width: 60px;
   border-radius: 20px;
   display: flex;
   transform: rotateY(180deg);
 
 }
-.elon-img {
+.second-candidate-image-progress {
   width: 60px;
   border-radius: 10px;
  
@@ -620,18 +632,24 @@ progress::-webkit-progress-bar {
   .select-state {
     font-weight: bold;
   }
-  .ed-img {
+  /* .ed-img {
     width: 50px;
     border-radius: 7px;
     padding-right: 5px;
     transform: rotateY(180deg);
-  }
+  } */
 
   .el-img {
     width: 50px;
     border-radius: 7px;
     padding-left: 5px;
   }
+  .ed-el img:first-child{
+    transform: rotateY(180deg);
+  }
+  /* .ed-el img:last-child{
+    transform: rotateY(-180deg);
+  } */
 
   .ed-el {
     margin: 0 auto;
@@ -640,6 +658,11 @@ progress::-webkit-progress-bar {
     padding-top: 10px;
     padding-bottom: 10px;
     
+  }
+  .el-img:hover,
+  .el-img:focus {
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
   }
   .vote-btn{
     background-color: #02732a;
@@ -650,4 +673,8 @@ progress::-webkit-progress-bar {
     border: none;
     display: flex;
     font-size: large;
+  }
+
+  .ed-el [type=radio]:checked + img {
+    outline: 2px solid #f00;
   }

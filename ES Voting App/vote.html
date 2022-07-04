@@ -27,15 +27,27 @@
     <div id="vote">
       <div class="row">
         <div>
-          <img class="edward-img" src="img/edward.jpeg" alt="" />
+          <img
+            class="first-candidate-image-progress"
+            src="img/edward.jpeg"
+            alt=""
+          />
         </div>
         <div style="width: 100%">
+          <div class="votecount">
+            <div id="aCount">0 Vote</div>
+            <div id="bCount">0 Vote</div>
+          </div>
           <div class="progress">
-            <progress min="0" max="100" value="63" />
+            <progress min="0" max="100" value="50" id="progress" />
           </div>
         </div>
         <div>
-          <img class="elon-img" src="img/elon-musk.jpeg" alt="" />
+          <img
+            class="second-candidate-image-progress"
+            src="img/elon-musk.jpeg"
+            alt=""
+          />
         </div>
       </div>
     </div>
@@ -46,17 +58,47 @@
       </div>
       <div class="select-box">
         <p class="select-state">Select State:</p>
-        <button class="btn-country">New York</button>
-      </div>
-      <div class="ed-el">
-        <img class="ed-img" src="img/edward.jpeg" alt=" Edward Cambel" />
-        <img class="el-img" src="img/elon-musk.jpeg" alt=" Elon Musk" />
+        <button class="btn-country" id="stateInput">New York</button>
       </div>
 
-      <button class="vote-btn">Vote</button>
+      <div class="ed-el">
+        <label for="radioA">
+          <input
+            type="radio"
+            id="radioA"
+            value="a"
+            name="radio"
+            style="display: none"
+          />
+          <img
+            class="el-img"
+            data-candidate="a"
+            src="img/edward.jpeg"
+            alt=" Edward Cambel"
+          />
+        </label>
+        <label for="radioB">
+          <input
+            type="radio"
+            id="radioB"
+            value="b"
+            name="radio"
+            style="display: none"
+          />
+          <img
+            class="el-img"
+            data-candidate="b"
+            src="img/elon-musk.jpeg"
+            alt=" Elon Musk"
+          />
+        </label>
+      </div>
+
+      <button class="vote-btn" id="vote-btn">Vote</button>
     </div>
 
     <script type="text/javascript" src="map/mapdata.js"></script>
     <script type="text/javascript" src="map/usmap.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
